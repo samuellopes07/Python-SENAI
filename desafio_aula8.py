@@ -51,26 +51,67 @@ print('-------------------------------------------------')
 senha = int(input('Digite sua senha: '))
 print('-------------------------------------------------')
 if login in dados['nomes'] and senha in dados['acessos']:
-   print('Bem-vindo ao nosso sistema de quartos')
+    print('Bem-vindo ao nosso sistema de quartos')
+    
+   
+    print('--------------------------------------------------')
+
+    print('Escolha seu quarto', dados['nomes'][0])
+
+    print('--------------------------------------------------')
+
+    quartos = ['simples','Duplo','luxo']
+    valores = [100.00, 150.00, 250.00]
+    print('opções de quartos: ', quartos)
+    print('--------------------------------------------------')
+    sua_alternativa = int(input('escolha seu quarto pelo id: 0 simples --, 1 Duplo --, 2 luxo: '))
+    print('--------------------------------------------------')
+    quantidade_dias = int(input('digite a quantidade de dias que você ficará hospedado: '))
+    print('--------------------------------------------------')
+
+    calculo = quantidade_dias*valores[sua_alternativa]
+    print('Você escolheu o quarto:', quartos[sua_alternativa],'e a quantidade de dias é de: ', quantidade_dias)
+    print('----------------------------------------------------')
+    print('O seu total é de: R$', calculo)
+
+    print('--------------------------------------------------')
+
+    print('Escolha seu quarto:', dados['nomes'][1])
+
+    print('--------------------------------------------------')
+
+    quartos = ['simples','Duplo','luxo']
+    valores = [100.00, 150.00, 250.00]
+    print('opções de quartos: ', quartos)
+    print('--------------------------------------------------')
+    sua_alternativa = int(input('escolha seu quarto pelo id: 0 simples --, 1 Duplo --, 2 luxo: '))
+    print('--------------------------------------------------')
+    quantidade_dias = int(input('digite a quantidade de dias que você ficará hospedado: '))
+    print('--------------------------------------------------')
+
+    calculo = quantidade_dias*valores[sua_alternativa]
+    print('Você escolheu o quarto:', quartos[sua_alternativa],'e a quantidade de dias é de: ', quantidade_dias)
+    print('----------------------------------------------------')
+    print('O seu total é de: R$', calculo)
+
+    print('--------------------------------------------------')
+    print('Escolha seu quarto', dados['nomes'][2])
+
+
+    print('--------------------------------------------------')
+
+    quartos = ['simples','Duplo','luxo']
+    valores = [100.00, 150.00, 250.00]
+    print('opções de quartos:', quartos)
+    print('--------------------------------------------------')
+    sua_alternativa = int(input('escolha seu quarto pelo id: 0 simples --, 1 Duplo --, 2 luxo: '))
+    print('--------------------------------------------------')
+    quantidade_dias = int(input('digite a quantidade de dias que você ficará hospedado: '))
+    print('--------------------------------------------------')
+
+    calculo = quantidade_dias*valores[sua_alternativa]
+    print('Você escolheu o quarto:', quartos[sua_alternativa],'e a quantidade de dias é de: ', quantidade_dias)
+    print('----------------------------------------------------')
+    print('O seu total é de: R$', calculo)
 else:
-   print('Há algo errado, tente novamento')
-print('--------------------------------------------------')
-
-print('Escolha seu quarto pelas opções: ')
-
-print('--------------------------------------------------')
-
-quartos = ['simples','Duplo','luxo']
-valores = [100.00, 150.00, 250.00]
-print('opções de quartos: ', quartos)
-print('--------------------------------------------------')
-sua_alternativa = int(input('escolha seu quarto pelo id: 0 simples --, 1 Duplo --, 2 luxo: '))
-print('--------------------------------------------------')
-quantidade_dias = int(input('digite a quantidade de dias que você ficará hospedado: '))
-print('--------------------------------------------------')
-
-calculo = quantidade_dias*valores[sua_alternativa]
-print('Você escolheu o quarto:', quartos[sua_alternativa],'e a quantidade de dias é de: ', quantidade_dias)
-print('----------------------------------------------------')
-print('O seu total é de: R$', calculo)
-
+    print('Há algo errado, tente novamento')
